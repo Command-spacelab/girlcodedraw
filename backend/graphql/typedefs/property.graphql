@@ -1,0 +1,19 @@
+# Types
+type Property implements Timestamps { 
+  id: ID!
+  name: String!
+  users: [User]
+
+  # Interface required
+  createdAt: Date!
+  updatedAt: Date!
+}
+
+# Inputs
+input PropertyCreateInput {
+  name: String!
+}
+
+input PropertyUpdateInput {
+  name: String
+}
