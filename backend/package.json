@@ -4,7 +4,7 @@
   "description": "This is the backend of girlcode draw system",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon ./index.js --exec babel-node"
+    "start": "nodemon ./index.js --exec babel-node"
   },
   "author": "Command-Space",
   "license": "ISC",
