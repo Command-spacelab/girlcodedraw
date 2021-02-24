@@ -1,8 +1,9 @@
 import { ApolloServer } from 'apollo-server-express';
 import { env } from '../config/environment';
+import schema from './schema'; // We imported this
 
 const apolloServer = new ApolloServer({
-  // Schema pending...
+  schema, // We added this
   playground: env.development,
 });
 
