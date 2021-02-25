@@ -1,0 +1,30 @@
+# Custom Scalars
+scalar Date
+
+type Query {
+  # Entries
+  entry: [Entry]!
+  entry(id: ID!): Entry
+
+  # User
+  users: [User]!
+  user(id: ID!): User
+
+  # Property
+  properties: [Property]!
+  property(id: ID!): Property
+}
+
+type Mutation {
+  # Entry
+  createEntry(entry: EntryCreateInput!): Entry!
+  updateEntry(id: ID!, Entry: EntryUpdateInput!): Entry!
+
+  # Users
+  createuser(user: userCreateInput!): user!
+  updateuser(id: ID!, user: userUpdateInput!): user!
+
+  # Properties
+  createproperty(property: propertyCreateInput!): property!
+  updateproperty(id: ID!, property: propertyUpdateInput!): property!
+}
